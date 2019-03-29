@@ -1,0 +1,28 @@
+package com.training.assignments;
+
+public interface IWindow {
+	public void open();
+
+	public void close();
+
+}
+
+class Room implements IWindow {
+
+	@Override
+	public void open() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void close() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class Hall implements IWindow{
+	
+}

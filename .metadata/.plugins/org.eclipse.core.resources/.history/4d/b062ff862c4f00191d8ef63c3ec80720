@@ -1,0 +1,16 @@
+package com.training.assignments;
+
+public class TryWithResourcesEx {
+	public static void saveFile() {
+		
+	}
+	
+	public static void readFile() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

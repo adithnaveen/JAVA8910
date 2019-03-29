@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.training.factorymethods&apos; to &apos;Java9Works1/factorymethods&apos;&#x0D;&#x0A;- Original project: &apos;Java9Works&apos;&#x0D;&#x0A;- Destination element: &apos;Java9Works1/factorymethods&apos;&#x0D;&#x0A;- Original element: &apos;Java9Works/factorymethods/com.training.factorymethods&apos;" description="Copy package" destination="=Java9Works1/factorymethods" element1="/factorymethods&lt;com.training.factorymethods" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1547655447106" version="1.0"/>
+</session>

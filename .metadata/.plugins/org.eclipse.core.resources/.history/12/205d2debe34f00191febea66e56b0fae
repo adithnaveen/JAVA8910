@@ -1,0 +1,38 @@
+package com.training.assignments.reactive.reactive.com.training.reactive.app;
+
+import java.util.List;
+import java.util.concurrent.SubmissionPublisher;
+
+import com.training.assignments.reactive.reactive.com.training.reactive.beans.Flight;
+import com.training.assignments.reactive.reactive.com.training.reactive.subscriber.FlightProcess;
+import com.training.assignments.reactive.reactive.com.training.reactive.utility.LoadData;
+
+public class FlightApp {
+	public static void main(String[] args) {
+
+		SubmissionPublisher<Flight> publisher = 
+					new SubmissionPublisher<>();
+
+		// invoking the subscriber
+		publisher.subscribe(new FlightProcess());
+
+		List<Flight> stocks = LoadData.getStocks();
+
+		stocks.stream().forEach(item -> {
+			publisher.submit(item);
+			sleep(500);
+
+		});
+
+		publisher.close();
+		System.out.println("Exiting ");
+	}
+
+	private static void sleep(int i) {
+		try {
+			Thread.sleep(i);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

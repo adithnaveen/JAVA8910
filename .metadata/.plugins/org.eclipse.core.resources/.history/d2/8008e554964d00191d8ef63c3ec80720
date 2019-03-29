@@ -1,0 +1,8 @@
+package com.training.halfpyramid;
+
+public class Mobile {
+	private double imei; 
+	private String make; 
+	private String model; 
+	
+}

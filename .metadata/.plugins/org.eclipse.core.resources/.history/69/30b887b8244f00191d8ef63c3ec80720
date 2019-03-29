@@ -1,0 +1,10 @@
+package com.training.assignments;
+
+public class WindowClient {
+	public static void main(String[] args) {
+		IWindow window1 = new Hall(); 
+		IWindow window2 = new Room();
+				
+				
+	}
+}

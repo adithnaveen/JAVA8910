@@ -1,0 +1,13 @@
+package com.training.halfpyramid;
+
+import java.util.List;
+
+public class MobileClient {
+	public static void main(String[] args) {
+		Mobile [] mobiles = new Mobile[] {
+				new Mobile(), 
+				new Mobile(), 
+				new Mobile() 
+		}; 
+	}
+}

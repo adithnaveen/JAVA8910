@@ -1,0 +1,48 @@
+package com.training.assignments;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.function.Function;
+import java.util.stream.Stream;
+
+public class CompletableFutureExample {
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+		String first = "first.txt";
+		String second = "second.txt";
+
+		CompletableFuture<Stream> file1 = CompletableFuture.runAsync(() -> {
+
+			fileOpr(first);
+
+		});
+
+		CompletableFuture<Void> file2 = CompletableFuture.runAsync(() -> {
+
+			fileOpr(second);
+
+		});
+
+		file1.get();
+		file2.get();
+		
+
+		/////////////////////////////////////////
+//		getData().thenCombine(getData1(), (s1, s2) -> s1 + s2).thenAccept(System.out::println);
+
+
+
+		file1.thenCombine(file2, (first, second) -> first + second); 
+
+	}
+
+	private static Stream fileOpr(String first) {
+		try (Stream<String> stream = Files.lines(Paths.get(first))) {
+			return stream;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

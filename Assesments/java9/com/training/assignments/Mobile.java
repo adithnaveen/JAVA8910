@@ -1,0 +1,30 @@
+package com.training.assignments;
+
+public class Mobile {
+	private double imei; 
+	private String make; 
+	private String model;
+	public double getImei() {
+		return imei;
+	}
+	public void setImei(double imei) {
+		this.imei = imei;
+	}
+	public String getMake() {
+		return make;
+	}
+	public void setMake(String make) {
+		this.make = make;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	
+	@Override
+	public String toString() {
+		return "imei=" + imei + ", make=" + make + ", model=" + model ;
+	} 
+}

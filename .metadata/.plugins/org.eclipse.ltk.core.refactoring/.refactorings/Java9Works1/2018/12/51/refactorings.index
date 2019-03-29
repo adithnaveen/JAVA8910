@@ -1,0 +1,18 @@
+1545210063878	Delete element
+1545211783198	Extract method 'findPlace'
+1545213818773	Extract method 'oldWay'
+1545214795162	Extract method 'withOptionals'
+1545240092013	Rename local variable 'validCity'
+1545241868297	Rename package 'com.training.optional.basics'
+1545290432312	Delete elements
+1545299658340	Delete elements
+1545299684703	Move compilation unit
+1545299690115	Move compilation unit
+1545299843015	Move compilation unit
+1545299875343	Rename package 'com.training.reactive'
+1545301475223	Delete element
+1545312272038	Extract method 'singleThreadedModel'
+1545312893291	Extract method 'completableMethod01'
+1545313152784	Extract method 'completableMethod02'
+1545318864321	Delete elements
+1545324796683	Copy compilation unit

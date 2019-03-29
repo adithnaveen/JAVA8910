@@ -1,0 +1,38 @@
+1540196870752	Rename type 'StreamOperationsEx01'
+1540196881586	Rename type 'StreamOperatiosnEx02'
+1540203359345	Rename type 'FlatMapEx01'
+1540214249731	Rename type 'CollectorsEx5'
+1540230269502	Rename type 'StreamAPIV1'
+1540230409719	Rename type 'FruitsExample'
+1540231581002	Move package
+1540231605294	Move packages
+1540231716122	Copy compilation units
+1540231748645	Delete elements
+1540231777492	Delete element
+1540236264902	Delete element
+1540236349872	Rename type 'LambdaExpressionThread'
+1540236570616	Rename type 'PredicateExampleNumbers'
+1540236578174	Rename type 'PredicateExampleAccount'
+1540236601402	Rename type 'ConsumerExampleCustom'
+1540236718761	Copy compilation unit
+1540300948610	Extract method 'walkWork'
+1540300999822	Extract method 'findWork'
+1540301042485	Extract method 'listWork'
+1540303662877	Rename type 'FileOperation'
+1540303678751	Rename type 'IOEx01'
+1540354404616	Delete element
+1540354407805	Delete element
+1540355022714	Delete element
+1540446472097	Extract method 'readFromXML'
+1540447747882	Rename local variable 'enuKeys'
+1540448124424	Copy file
+1540448270237	Copy file
+1540448380131	Copy file
+1540448776771	Copy file
+1540449011263	Rename local variable 'bundleKeys'
+1540449471548	Move 'greetings_fr.properties' to 'properties'
+1540449475519	Move 'greetings_gr.properties' to 'properties'
+1540449479599	Delete element
+1540449506415	Rename resource 'greetings_gr.properties'
+1540449516277	Rename resource 'greetings_d.properties'
+1540449763837	Rename type 'PropertiesXMLFileDemo'

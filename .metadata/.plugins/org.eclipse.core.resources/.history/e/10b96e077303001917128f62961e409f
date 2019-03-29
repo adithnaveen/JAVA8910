@@ -1,0 +1,14 @@
+package com.training.optional.basics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.training.optional.bean.Place;
+import com.training.travel.model.Places;
+
+public class Main {
+	public static void main(String[] args) {
+		List<Places> places  = new ArrayList<Places>(); 
+	}
+}

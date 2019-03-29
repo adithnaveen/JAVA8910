@@ -1,0 +1,32 @@
+package com.training.assignments;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ImmutableList {
+	public static void main(String[] args) {
+		List<String> alphabets = List.of("n", "v", "w", "o", "p", "c", "d",
+				"e", "i", "j", "k", "l", "m", "f", "g", "h",
+				"q", "r", "s", "t", "u", "x", "a", "b", "y", "z");
+
+		List<String> sublist1 = alphabets.stream().collect(Collectors.toList());
+
+		// Options 1
+//		Collections.sort(sublist1, (a, b) -> {
+//			return b.compareTo(a);
+//		}); 
+
+		// Option
+		Collections.sort(sublist1, Collections.reverseOrder());
+
+		List<String> firstSubList = Collections.unmodifiableList(sublist1.subList(0, sublist1.indexOf("m")));
+		List<String> secondSubList = Collections.unmodifiableList(sublist1.subList(sublist1.indexOf("m"), 
+					sublist1.size()));
+
+
+		firstSubList.forEach(System.out :: print );
+		System.out.println();
+		secondSubList.forEach(System.out :: print);
+	}
+}

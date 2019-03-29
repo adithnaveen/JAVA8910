@@ -1,0 +1,7 @@
+package com.training.assignments;
+
+public class TryWithResourcesEx {
+	public static void main(String[] args) {
+		
+	}
+}

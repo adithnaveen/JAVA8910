@@ -1,0 +1,30 @@
+package com.training.assignments;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class TryWithResourcesEx {
+	public static void saveFile() throws IOException {
+
+		BufferedWriter writer = new BufferedWriter(new FileWriter("Sample.txt"));
+		try (writer) {
+			writer.write("Hello this is for testing");
+		}
+
+	}
+
+	public static void readFile() throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader("Sample.txt"));
+		try (reader) {
+			System.out.println(reader.readLine());
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+//		saveFile();
+		readFile();
+	}
+}

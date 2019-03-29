@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="try-with"/>
+	<classpathentry kind="src" path="streamapi"/>
+	<classpathentry kind="src" path="non-modular-app"/>
+	<classpathentry kind="src" path="processapi"/>
+	<classpathentry kind="src" path="optional-class"/>
+	<classpathentry kind="src" path="reactive"/>
+	<classpathentry kind="src" path="completable-future"/>
+	<classpathentry kind="src" path="factorymethods"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

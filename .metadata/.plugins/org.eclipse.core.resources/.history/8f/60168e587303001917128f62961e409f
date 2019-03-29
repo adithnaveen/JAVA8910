@@ -1,0 +1,17 @@
+package com.training.optional.basics;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.training.optional.bean.Place;
+
+public class Main {
+	public static void main(String[] args) {
+		List<Place> places  = Arrays.asList(
+				new Place("Karnataka", "Bengaluru", Arrays.asList("Mysuru", "Mangaluru", "Belagavi", "Tumakuru")),
+				new Place("Rajasthan", "Jaipur", Arrays.asList("Jodhpur", "Kota", "Bikaner", "Udaipur")),
+				new Place("TamilNadu", "Chennai", Arrays.asList("Mysuru", "Mangaluru", "Belagavi", "Tumakuru")),
+				new Place("Andra", "Hyderabad", Arrays.asList("Mysuru", "Mangaluru", "Belagavi", "Tumakuru"))
+				);
+	}
+}

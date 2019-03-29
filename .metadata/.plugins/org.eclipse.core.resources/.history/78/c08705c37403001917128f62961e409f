@@ -1,0 +1,11 @@
+package com.training.optional.basics;
+
+import java.util.List;
+
+import com.training.optional.bean.Place;
+
+public interface IBusinessLogic {
+	List<String> getTravelPlaces(String state);
+
+	Place getCapitalCity(String state);
+}

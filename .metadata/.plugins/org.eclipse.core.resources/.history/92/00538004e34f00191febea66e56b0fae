@@ -1,0 +1,5 @@
+package com.training.assignments.reactive.reactive.com.training.reactive.beans;
+
+public class Flight {
+
+}

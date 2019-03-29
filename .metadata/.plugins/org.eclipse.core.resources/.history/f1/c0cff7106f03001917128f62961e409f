@@ -1,0 +1,5 @@
+package com.training.optional.basics;
+
+public class BusinessLogic implements IBusinessLogic {
+	
+}

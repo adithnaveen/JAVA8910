@@ -1,0 +1,8 @@
+package com.training.assignments;
+
+public interface IWindow {
+	public void open();
+
+	public void close();
+
+}

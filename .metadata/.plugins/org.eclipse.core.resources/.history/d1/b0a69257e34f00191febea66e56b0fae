@@ -1,0 +1,32 @@
+package com.training.reactive.utility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.training.reactive.beans.Commission;
+import com.training.reactive.beans.Stock;
+
+public class LoadData {
+	// Simulating the data would be taken from external resource 
+	
+	public static List<Stock> getStocks(){
+		return List.of(
+				new Flight("Paris", 411), 
+				new Flight("Dallas", 234), 
+				new Flight("Washinton", 333), 
+				new Flight("Muscat", 123), 
+				new Flight("Colombo", 123)
+				); 
+		
+	}
+	
+	
+	public static List<Commission> getCommissionAndStock(){
+
+		List<Commission> commission = new ArrayList<>(); 
+		getStocks().forEach((stock) -> {
+			commission.add(new Commission(stock, stock.getStockPrice()*0.03)); 
+		}); 
+		return commission; 
+	}
+}	

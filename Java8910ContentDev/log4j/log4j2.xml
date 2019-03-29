@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+
+	<Properties>
+		<Property name="console_log_pattern">%d{HH:mm:ss.SSS} [%t] %-5level %logger{10} - %msg%n</Property>
+		<Property name="file_log_pattern">%d{HH:mm:ss.SSS} [%t] %-5level %logger{10} - %msg%n</Property>
+		<Property name="filename">log/myapp.log</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern ="${console_log_pattern}" />
+		</Console>
+		
+ 		<File name="MyFile" fileName="${filename}" immediateFlush="false" append="true">
+            <PatternLayout pattern="${file_log_pattern}"/>
+        </File>
+        
+       <JDBC name="MySQLDatabase" tableName="logs">
+         <ConnectionFactory
+            class="com.training.loggers.ConnectionFactory" method="getConnection" />
+         <Column name="LOG_ID" pattern="%u" />
+         <Column name="datetime" isEventTimestamp="true" />
+         <Column name="LOGGER" pattern="%logger" />
+         <Column name="LOG_LEVEL" pattern="%level" />
+         <Column name="MESSAGE" pattern="%m" />
+         <Column name="EXCEPTION" pattern="%throwable " />
+      </JDBC>
+      
+	</Appenders>
+	
+	<Loggers>
+		<Logger name="com.training.loggers.CRUDOperation" level="all"
+			additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="MyFile"/>
+			<AppenderRef ref="MySQLDatabase"/>
+		</Root>
+	</Loggers>
+
+	
+
+</Configuration>

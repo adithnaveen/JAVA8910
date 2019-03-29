@@ -1,0 +1,47 @@
+package com.training.assignments;
+
+public interface IWindow {
+	public void open();
+
+	public void close();
+
+	public default void grillSize() {
+	}
+	
+	
+	private void grillLength() {
+		System.out.println("Every Room / Hall shall have grill with standard length");
+	}
+	
+	private void grillBreadth() {
+		System.out.println("Every Room / Hall shall have grill with standard breadth ");
+	}
+}
+
+class Room implements IWindow {
+
+	@Override
+	public void open() {
+
+		System.out.println("Room Door Opens ");
+	}
+
+	@Override
+	public void close() {
+		System.out.println("Room Door closes ");
+	}
+	
+}
+
+class Hall implements IWindow{
+
+	@Override
+	public void open() {
+		System.out.println("Hall door opens ");
+	}
+
+	@Override
+	public void close() {
+		System.out.println("Hall door closes ");
+	}
+}

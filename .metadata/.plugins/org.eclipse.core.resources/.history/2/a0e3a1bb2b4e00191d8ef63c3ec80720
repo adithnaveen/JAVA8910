@@ -1,0 +1,28 @@
+package com.training.halfpyramid;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class ImmutableList {
+	public static void main(String[] args) {
+		List<String> alphabets = List.of("n", "v", "w", "o", "p", "c", "d", "e", "i", "j", "k", "l", "m", "f", "g", "h",
+				"q", "r", "s", "t", "u", "x", "a", "b", "y", "z");
+
+
+		List<String> sublist1 = alphabets.stream().collect(Collectors.toList()); 
+//
+//		Collections.sort(sublist1, (a, b) -> {
+//			return b.compareTo(a);
+//		}); 
+		Collections.sort(sublist1, Collections.reverseOrder());
+
+		sublist1.subList(0, sublist1.indexOf("m")).forEach((temp) -> System.out.print("\t" + temp));
+		System.out.println();
+		sublist1.subList(sublist1.indexOf("n"), sublist1.size()).forEach((temp) -> System.out.print("\t" + temp));
+
+	}
+}

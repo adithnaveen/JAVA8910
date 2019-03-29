@@ -1,0 +1,20 @@
+package com.training.optional.basics;
+
+import java.util.List;
+
+import com.training.optional.bean.Place;
+
+public class BusinessLogic implements IBusinessLogic {
+
+	@Override
+	public List<Place> getTravelPlaces(String state) {
+
+	}
+
+	@Override
+	public Place getCapitalCity(String state) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -1,0 +1,31 @@
+package com.training.optional.basics;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.training.optional.bean.Place;
+
+public class Main {
+	public static void main(String[] args) {
+		List<Place> places = Arrays.asList(
+				new Place("Karnataka", "Bengaluru", Arrays.asList("Mysuru", "Mangaluru", "Belagavi", "Tumakuru")),
+				new Place("Rajasthan", "Jaipur", Arrays.asList("Jodhpur", "Kota", "Bikaner", "Udaipur")),
+				new Place("Virginia", "Richmond",
+						Arrays.asList("Orange County", "Prince Edward County", "Williamsburg", "Radford")),
+				new Place("Andra", "Hyderabad", Arrays.asList("Mysuru", "Mangaluru", "Belagavi", "Tumakuru")),
+				new Place("Nauru", null, null));
+
+		IBusinessLogic service = new BusinessLogic(places);
+
+		System.out.println(service.getCapitalCity("Karnataka"));
+		List<String> listOfCities = service.getTravelPlaces("Nauru");
+		if (listOfCities != null) {
+			for (String temp : listOfCities) {
+				System.out.println(temp);
+			}
+		}else {
+			System.out.println("No Cities Found ");
+		}
+
+	}
+}

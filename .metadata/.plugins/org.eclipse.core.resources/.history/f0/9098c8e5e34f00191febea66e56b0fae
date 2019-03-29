@@ -1,0 +1,23 @@
+package com.training.assignments.reactive.reactive.com.training.reactive.utility;
+
+import java.util.List;
+
+import com.training.assignments.reactive.reactive.com.training.reactive.beans.Flight;
+
+public class LoadData {
+	// Simulating the data would be taken from external resource 
+	
+	public static List<Flight> getFlight(){
+		return List.of(
+				new Flight("Paris", 411), 
+				new Flight("Dallas", 234), 
+				new Flight("Washinton", 333), 
+				new Flight("Muscat", 123), 
+				new Flight("Colombo", 223)
+				); 
+		
+	}
+	
+
+
+}	

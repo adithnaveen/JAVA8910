@@ -1,0 +1,28 @@
+package com.training.assignments.reactive.reactive.com.training.reactive.beans;
+
+public class Flight {
+	private String name;
+	private double seatingCapacity; 
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Flight [name=" + name + "]";
+	}
+
+	public double getSeatingCapacity() {
+		return seatingCapacity;
+	}
+
+	public void setSeatingCapacity(double seatingCapacity) {
+		this.seatingCapacity = seatingCapacity;
+	} 
+	
+}

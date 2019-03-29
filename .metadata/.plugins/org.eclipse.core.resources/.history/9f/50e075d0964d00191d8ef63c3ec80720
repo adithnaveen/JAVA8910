@@ -1,0 +1,27 @@
+package com.training.halfpyramid;
+
+import java.util.List;
+
+public class MobileClient {
+	public static void main(String[] args) {
+		Mobile [] mobiles = new Mobile[] {
+				new Mobile(), 
+				new Mobile(), 
+				new Mobile() 
+		}; 
+		
+		mobiles[0].setImei(123456);
+		mobiles[0].setMake("Samsung");
+		mobiles[0].setModel("s10");
+		
+		mobiles[0].setImei(44332211);
+		mobiles[0].setMake("Apple");
+		mobiles[0].setModel("s10");
+		
+		mobiles[0].setImei(123456);
+		mobiles[0].setMake("Samsung");
+		mobiles[0].setModel("s10");
+		
+		
+	}
+}
